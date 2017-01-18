@@ -1,0 +1,13 @@
+<h1>Welcome to Anagrams!</h1>
+
+<% if @new_word %>
+    <p>La palabra que enviaste fue:"<span id="anagram_say"><%= @new_word %></span>"</p>
+  <% end %>
+
+<form action = "/new_word" method="post">
+  Escribe una palabra para ver si es anagrama:<br>
+  <input type = "text" name="new_word">
+  <input type = "submit">
+</form>
+
+
